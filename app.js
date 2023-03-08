@@ -9,8 +9,9 @@ const {
 const app=express();
 
 //importaciones de las rutas de la aplicacion
-const alumnoRoutes=require("./routes/alumnos.routes");
-const personaRoutes=require("./routes/personas.route")
+const vendedorRoutes=require("./routes/vendedores.routes");
+const puestoRoutes=require("./routes/puestos.routes");
+const comidaRoutes=require("./routes/comidas.routes");
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -18,8 +19,9 @@ app.use(cors());
 
 
 //Configuración de las rutas
-app.use(`/api/${API_VERSION}`, alumnoRoutes);
-app.use(`/api/${API_VERSION}`, personaRoutes);
+app.use(`/api/${API_VERSION}`, vendedorRoutes);
+app.use(`/api/${API_VERSION}`, puestoRoutes);
+app.use(`/api/${API_VERSION}`, comidaRoutes);
 
 module.exports=app;
 

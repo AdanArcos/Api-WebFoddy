@@ -9,7 +9,8 @@ const {
 
 const app=require("./app");
 
-const port =process.env.PORT || 4000;
+const port =process.env.PORT || 6000;
+
 
 mongoose.set("strictQuery",false);
 mongoose.connect(`mongodb://${IP_SERVER}:${DB_PORT}/${DB_NAME}`, (error)=>{

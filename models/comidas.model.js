@@ -8,6 +8,7 @@ const Comidas=mongoose.Schema({
     nombre: String,
     precio: Number,
     mostrar: Boolean,
+    imagen: String,
     created_at:Date
 })
 

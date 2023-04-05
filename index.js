@@ -9,7 +9,7 @@ const {
 
 const app=require("./app");
 
-const port =process.env.PORT || 6000;
+const port =process.env.PORT || 4000;
 
 
 mongoose.set("strictQuery",false);

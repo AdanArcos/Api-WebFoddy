@@ -22,6 +22,7 @@ app.use(cors());
 app.use(`/api/${API_VERSION}`, vendedorRoutes);
 app.use(`/api/${API_VERSION}`, puestoRoutes);
 app.use(`/api/${API_VERSION}`, comidaRoutes);
+//Hola
 
 module.exports=app;
 

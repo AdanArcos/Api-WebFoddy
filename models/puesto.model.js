@@ -5,7 +5,7 @@ const Puestos=mongoose.Schema({
     nombre: String,
     imagen: String,
     direccion: String,
-    telefono: Number,
+    telefono: String,
     created_at:Date
 })
 
